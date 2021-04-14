@@ -1,9 +1,20 @@
 html,
+* {
+	box-sizing: border-box;
+  }
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #fff;
+	
 }
+#myVideo {
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+  }
 
 .main-wrapper {
 	margin: 30px auto 0;
@@ -15,7 +26,7 @@ body {
 	font-family: 'Brush Script MT', cursive;
 	text-align: center;
 	font-size: 3.2em;
-	color: #050885;
+	color: #e60606;
 	text-shadow: 1px 1px 1px #5a0b0d;
 }
 
@@ -32,78 +43,61 @@ body {
 	position: relative;
 }
 
-/* .crash-cymbal {
-	position: absolute;
-	top: 114px;
-    left: 80px;
-    transform: rotate(-7.2deg) scale(1.5);
-    transition: all ease-in-out .042s;
-}
-
-.hihat-top-cymbal {
-	position: absolute;
-    top: 166px;
-    right: 71px;
-    transform: scale(1.35);
-    z-index: 0;
-    transition: all ease-in-out .042s;
-} */
-
 .key {
 	font-family: Georgia, serif;
 	display: inline-block;
 	transition: all ease-in-out .042s;
 	position: absolute;
-	background: #eaeaea;
+	background: #0c0404;
     font-size: 1.5em;
-    height: 32px;
-    width: 32px;
+    height: 40px;
+    width: 40px;
     text-align: center;
     border-radius: 4px;
     border: 3px solid #aaa;
-    color: rgb(230, 11, 11);
+    color: rgb(250, 244, 244);
     box-shadow: 1px 1px 1px rgba(0,0,0,.65);
     z-index: 2;
 }
 
 .key.kick {
 	top: 375px;
-    right: 220px;
+    right: 200px;
 }
 
 .key.kick2 {
     top: 375px;
-    right: 278px;
+    right: 378px;
 }
 
 .key.snare {
-	right: 145px;
-    top: 270px;
+	right: 165px;
+    top: 230px;
 }
 
 .key.tom-high {
-	right: 190px;
+	right: 250px;
     top: 220px;
 }
 
 .key.tom-mid {
-	left: 252px;
+	left: 222px;
     top: 220px;
 }
 
 .key.tom-low {
-	top: 320px;
-    left: 203px;
+	top: 290px;
+    left: 153px;
 }
 
 .key.crash {
 	top: 210px;
-    left: 145px;
+    left: 125px;
 }
 
 .key.ride {
-	left: 195px;
-    top: 117px;
+	left: 125px;
+    top: 127px;
 }
 
 .key.hihat-open {
@@ -120,49 +114,6 @@ body {
 	transform: scale(1.12);
 }
 
-/* .key-map-wrapper {
-	position: absolute;
-    right: 0;
-    top: 0;
-    height: 700px;
-    background: #111;
-    width: 250px;
-    z-index: 3;
-} */
-
-/* .key-map-wrapper > h2 {
-	color: #fff;
-	font-family: 'Handlee', cursive;
-	margin-bottom: 35px;
-	border-bottom: 1px solid #fff;
-    padding-bottom: 20px;
-} */
-
-/* .key-map-list {
-	list-style: none;
-	color: #fff;
-	text-align: left;
-}
-
-.key-map-list > li {
-	margin-bottom: 25px;
-} */
-
-/* .key-code {
-	color: #444;
-    background-color: #eaeaea;
-    font-size: 1.25em;
-    padding: 5px 10px;
-    border-radius: 4px;
-    border: 3px solid #aaa;
-}
-
-.key-sound {
-	font-size: 1.2em;
-	margin-left: 10px;
-	font-family: 'Handlee', cursive;
-	vertical-align: middle;
-} */
 
 
 

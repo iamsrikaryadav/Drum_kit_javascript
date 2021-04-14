@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>Srikar Drum Kit</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <h1 class="main-title"> Srikar Drum Kit</h1>
 <main>
-
+ <video autoplay muted loop id="myVideo">
+    <source src="img/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
   <section class="main-wrapper">
 
-    <h1 class="main-title"> Srikar Drum Kit</h1>
+    
     <div class="drum-kit-wrapper">
     
       <button class="key snare">a</button>
@@ -28,6 +32,18 @@
 </main>
    
   <script>
+  var video = document.getElementById("myVideo");
+    
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
 noOfDrums = document.querySelectorAll(".key").length;
     for(let i=0 ; i<noOfDrums ; i++){
         console.log(document.querySelectorAll(".key")[i]);
@@ -94,6 +110,7 @@ noOfDrums = document.querySelectorAll(".key").length;
                 break;
         }
     }
+    
 
     //detect keyboard press
 
